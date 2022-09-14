@@ -1,0 +1,45 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta
+      name="keywords"
+      content="html, css, javascript, frontend, dollars, bitcoin, $, BTC, price, buy, svitlychnyi, serhii"
+    />
+    <meta
+      name="description"
+      content="Це додаток Сергія Світличного, який розраховує кількість Bitcoin, що можна купити за задану користувачем суму доларів."
+    />
+    <meta name="author" content="Світличний Сергій" />
+    <title>Converter</title>
+    <link rel="stylesheet" href="css/main.css" />
+  </head>
+  <body>
+    <main class="main">
+      <div class="container">
+        <h1 class="main__title">Converter</h1>
+        <form class="main__form form-main" action="#">
+          <div class="form-main__price">
+            <label for="price">What is Bitcoin price today?</label>
+            <input id="price" class="form-main__price-input" type="number"placeholder="Bitcoin to Dollars" min="1" />
+          </div>
+
+          <div class="form-main__change">
+            <label for="change">How much $ do you have?</label>
+            <input id="change" class="form-main__change-input" type="number" placeholder="Dollars change" min="1"/>
+          </div>
+        </form>
+
+        <div class="main__result result-main">
+          <p class="result-main__text">You can buy:</p>
+          <div class="result-main__out"></div>
+          <button class="result-main__btn" type="button">BTC</button>
+        </div>
+      </div>
+    </main>
+
+    <script src="script/main.js"></script>
+  </body>
+</html>
